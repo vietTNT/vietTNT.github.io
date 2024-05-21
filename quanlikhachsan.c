@@ -258,25 +258,6 @@ void layho(char *s,char *name) // lay ho tu ho va ten
 	temp[sizeof(temp)-1]='\0'; 
 	// dung strtok de tach chuoi thanh cac tu
 	char *t=strtok(temp, " ");
-//	char n[100] ="";
-//	
-//	while(t!=NULL)
-//	{
-//		if(strtok(NULL, " ")!=NULL)
-//		{
-//			if(strlen(n)>0)
-//			{
-//				//strcat dung de noi hai chuoi s2 vao s1 strcat(s1,s2)
-//				strcat(n, " ");// noi tu rong vao n
-//			}
-//			strcat(n,t);// noi ho vao n
-//		}else
-//		{
-//			break;	// t cuoi cung la ten nen thoat
-//		}
-//		t=strtok(NULL, " "); // tiep tuc tach tu de thuc hien vong lap
-//	}
-	// copy ten (t cuoi cung) vao name 
 	strncpy(name, t, 50);
 	name[49] = '\0'; // dam bao chuoi da ket thuc
 }
@@ -1874,7 +1855,7 @@ void ktnhap(int sl,char *temp)
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -1921,7 +1902,7 @@ void ktnhap1(int sl,char *temp)
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -1969,7 +1950,7 @@ void ktnhap2(int sl,char *temp) // nhap theo gioi tinh
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -2016,7 +1997,7 @@ void ktnhap3(int sl,char *temp) // nhap theo ho va ten
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -2062,7 +2043,7 @@ void ktnhap4(int sl,char *temp) // nhap theo ho va ten
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -2108,7 +2089,7 @@ void ktnhap5(int sl,char *temp) // nhap menu sap xep theo hoa va ten
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -2155,7 +2136,7 @@ void ktnhap6(int sl,char *temp) // nhap menu sap xep theo hoa va ten tang dan ho
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -2202,7 +2183,7 @@ void ktnhap7(int sl,char *temp) // nhap menu sap xep theo ma hoa don tang dan ho
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -2248,7 +2229,7 @@ void ktnhap8(int sl,char *temp) // nhap menu sap xep theo ma hoa don tang dan ho
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -2294,7 +2275,7 @@ void ktnhap9(int sl,char *temp) // nhap menu sap xep theo ma hoa don tang dan ho
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -2340,7 +2321,7 @@ void ktnhapx(int sl,char *temp) // nhap menu xoa khach hang
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -2386,7 +2367,7 @@ void ktnhap10(int sl,char *temp) // nhap menu sap xep theo ma hoa don tang dan h
                 continue;
             }
         }
-		// Kiem tra ky tu co phai la chu so tu 0-9 kh鬾g
+		// Kiem tra ky tu co phai la chu so tu 0-9 kh么ng
         if (isdigit(temp[a]) && a < sl - 1) {
             putchar(temp[a]);
             a++;
@@ -3056,7 +3037,7 @@ int main()
     } while ((0<c)&&(c<10));
     return 0;
 	}
-// h鄊 x骯 kh醕h h鄋g theo nhieu tieu chi khac nhau
+// h脿m x贸a kh谩ch h脿ng theo nhieu tieu chi khac nhau
 // lam lai cai menu cho hoan thien hon
 // sap xep theo tieu chi loai phong
 // tim kiem theo tieu chi loai phong
